@@ -1,0 +1,49 @@
+pushd C:\Users\gym12\source\repos\MAIN-4\Debug
+MAIN-4_AssemblyCompiler test.s & MAIN-4
+
+MAIN-4 (410)
+
+P = PIN
+N = NIBBLE
+S = SEND
+
+0 : nop :       : does nothing
+
+1 : pin : pin   : sets current pin to value
+2 : inp :       : sets accumulator to pins value
+3 : out :       : sends accumulator value to pins value
+
+4 : ldi : val   : loads direct value 
+5 : lda : $pos  : loads from memory position mpos
+6 : sta : $pos  : set register to accumulator
+
+7 : ~~~ : $pin  : loader
+
+8 : inc :       : increments the accumulator
+9 : dec :       : decrements the accumulator
+A : not :       : nots the accumulator
+B : and : $reg  : ands register and acc and saves to acc
+
+C : cmp : $pos1 : compares acc to memory position and if equal returns 0, less - 1, greater - 2
+D : skp : cmds  : skips cmds counts of nibbles if $pos is not 0
+E : flg : name1 : sets a flag
+F : jmp : name1 : jumps to flag
+
+REGISTERS: 16 | 16N
+
+PINS: 4
+	B ROM:
+	I KEYBOARD:
+	O SCREEN:
+
+
+KEYBOARD:
+	Up: 8, Down: 4, Left: 2, Right: 1
+
+SCREEN:
+	16X16 1-bit screen 16 fps
+	Sending X and Y
+	
+ROM:
+	Total: 512N
+	Sending X and Y and getting or setting

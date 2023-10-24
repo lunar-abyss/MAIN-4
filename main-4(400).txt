@@ -1,0 +1,48 @@
+MAIN-4 V0.1
+
+P = PIN
+N = NIBBLE
+S = SEND
+
+0 : nop :       : does nothing
+1 : pin : pin   : sets current pin to value
+2 : inp :       : sets accumulator to pins value
+3 : out :       : sends accumulator value to pins value
+
+4 : ldi : val   : loads direct value 
+5 : lda : $pos  : loads from memory position mpos
+6 : sta : $pos  : set register to accumulator
+7 : inc :       : increments the accumulator
+
+8 : cmp : $pos1 : compares to memory positions and if equal does next command
+9 : skp : $pos  : skips cmds counts of nibbles if $pos is 0
+A : flg : name1 : sets a flag
+B : jmp : name1 : jumps to flag
+
+REGISTERS: 16 | 16N
+
+PINS: 4
+	B ROM:
+	I KEYBOARD:
+	O SCREEN:
+
+
+KEYBOARD:
+	Up: 8, Down: 4, Left: 2, Right: 1
+
+SCREEN:
+	16X16 1-bit screen 16 fps
+	Sending X and Y
+	
+ROM:
+	Total: 512N
+	Sending X and Y and getting or setting
+
+///////
+3 : kbd sending 0 - 16, and then getting
+3 : scr
+1 : sound
+1 : cart
+6 : rom (8)
+1 : mouse (joystick)
+1 : net (time, sites)

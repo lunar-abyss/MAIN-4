@@ -1,0 +1,33 @@
+﻿MAIN-4(402)
+
+FANTASY COMPUTER:
+• Optimising most of commands.
+• Adding AND which ANDs accumulator with register
+• Adding XOR which XORs accumulator with register
+• Fixing bug with loading bigger then 15
+• Fixing one screen bug.
+
+ASSEMBLY:
+• Macros, start with MAC and end with EOM
+
+LIB:
+• $binary binary representation of number
+• Some macros
+
+GAMES:
+○ "Attacked"
+
+SITE:
+○ More info.
+
+MAIN-4(430)
+○ Now you need to send one value no KEYBOARD, and then get a key from it
+	0  => Left (LEFT)
+	1  => Right (RIGHT)
+	2  => Up (UP)
+	3  => Down (DOWN)
+	4  => Z (ACTION1)
+	5  => X (ACTION2)
+	6  => Space (START)
+	7  => Escape (QUIT)
+	15 => Is any pressed (ANY)
