@@ -14,5 +14,5 @@
 
 ## Contact
 If you have some *questions*, feel free to *ask* them in discord server. Also updates on the discord server appear earlier than on itch.io.
-- [Discord Server(https://discord.gg/KzjCMe52MF)
+- [Discord Server](https://discord.gg/KzjCMe52MF)
 - [Site](https://lunaryss.gamejolt.io)
