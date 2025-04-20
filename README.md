@@ -1,5 +1,6 @@
 # MAIN-4 Fantasy Computer
 -------------------------
+> Archived, the project is no longer supported
 
 ## Overview
 *MAIN-4* is a *4-bit fantasy computer*, designed for "funny" *assembly* programming. The main concept is about *"evolving"* and programming everything in *"DIY mode"*.
